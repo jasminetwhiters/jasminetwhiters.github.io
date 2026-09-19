@@ -1,0 +1,643 @@
+
+:root {
+    --text-color: rgb(197, 211, 241);
+    --link-color: rgb(255, 255, 255);
+    --background-color: rgb(14, 13, 41);
+    --card-color: rgb(22, 27, 34);
+    --border-color: rgb(48, 54, 61);
+    --accent-color: rgb(37, 131, 115);
+}
+
+
+/* =========================
+   GENERAL
+   ========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+
+/* =========================
+   NAVBAR
+   ========================= */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 50px;
+
+    background-color: var(--background-color);
+
+    border-bottom: 1px solid var(--border-color);
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+
+/* Name */
+
+.navbar .left a {
+    color: var(--text-color);
+
+    font-size: 22px;
+    font-weight: 600;
+}
+
+
+/* Center tabs */
+
+.tabs {
+    display: flex;
+    gap: 30px;
+}
+
+.tabs a {
+    color: var(--text-color);
+
+    font-size: 16px;
+
+    transition: 0.2s;
+}
+
+.tabs a:hover {
+    color: var(--accent-color);
+}
+
+
+/* Right icons */
+
+.navbar .right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .right a {
+    margin-left: 20px;
+    color: var(--text-color);
+
+    transition: 0.2s;
+}
+
+.navbar .right a:hover {
+    color: var(--accent-color);
+}
+
+.navbar .right a span {
+    margin-left: 5px;
+}
+
+
+/* =========================
+   HERO SECTION
+   ========================= */
+
+.hero-section {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 100px;
+
+    padding: 70px 80px;
+
+    min-height: auto;
+}
+
+
+/* Headshot */
+
+.hero-section .headshot {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-section .headshot img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+/* Hero text */
+
+.hero-section .text {
+
+    flex: 2;
+
+    color: var(--text-color);
+}
+
+.hero-section .text h2 {
+
+    font-size: 45px;
+
+    margin-bottom: 20px;
+}
+
+.hero-section .text p {
+
+    font-size: 18px;
+
+    line-height: 1.6;
+}
+
+
+/* Contact button */
+
+.hero-section .links {
+
+    margin-top: 25px;
+}
+
+.hero-section .links a {
+
+    display: inline-block;
+
+    padding: 8px 15px;
+
+    border: 2px solid var(--link-color);
+
+    border-radius: 5px;
+
+    margin-right: 10px;
+
+    transition: 0.2s;
+}
+
+.hero-section .links a:hover {
+
+    color: var(--accent-color);
+
+    border-color: var(--accent-color);
+}
+
+
+/* =========================
+   ABOUT ME
+   ========================= */
+
+.about-me {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 80px;
+
+    padding: 70px 80px;
+
+    min-height: auto;
+
+    color: var(--text-color);
+}
+
+
+/* Text takes more space */
+
+.about-text {
+
+    flex: 1.5;
+}
+
+.about-text h2 {
+
+    font-size: 35px;
+
+    margin-bottom: 25px;
+}
+
+.about-text p {
+
+    font-size: 18px;
+
+    line-height: 1.8;
+}
+
+
+/* About image */
+
+.about-image {
+
+    flex: 1;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+.about-image img {
+
+    width: 100%;
+
+    max-width: 400px;
+
+    border-radius: 10px;
+}
+
+
+/* =========================
+   EXPERIENCE + SKILLS
+   ========================= */
+
+.experience-skills {
+
+    display: flex;
+
+    gap: 80px;
+
+    padding: 70px 80px;
+
+    color: var(--text-color);
+}
+
+.experience,
+.skills {
+
+    flex: 1;
+}
+
+.experience h2,
+.skills h2 {
+
+    font-size: 35px;
+
+    margin-bottom: 30px;
+}
+
+
+/* Experience */
+
+.experience-item {
+
+    padding: 25px;
+
+    background-color: var(--card-color);
+
+    border: 1px solid var(--border-color);
+
+    border-radius: 10px;
+}
+
+.experience-item h3 {
+
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.company {
+
+    color: var(--accent-color);
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.portfolio {
+    margin-top: 15px;
+}
+
+.portfolio a{
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.portfolio a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   SKILLS
+   ========================= */
+
+.cells {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+}
+
+.cell {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 12px 18px;
+
+    background-color: var(--card-color);
+
+    border: 1px solid var(--border-color);
+
+    border-radius: 8px;
+}
+
+.cell img {
+
+    width: 30px;
+
+    height: 30px;
+
+    object-fit: contain;
+}
+
+.cell span {
+
+    font-size: 16px;
+}
+
+
+/* =========================
+   PROJECTS
+   ========================= */
+
+.projects {
+
+    padding: 70px 80px;
+
+    color: var(--text-color);
+}
+
+.projects h2 {
+
+    text-align: center;
+
+    font-size: 35px;
+
+    margin-bottom: 50px;
+}
+
+.project-container {
+
+    display: flex;
+
+    gap: 30px;
+}
+
+.project-card {
+
+    flex: 1;
+
+    padding: 30px;
+
+    background-color: var(--card-color);
+
+    border: 1px solid var(--border-color);
+
+    border-radius: 10px;
+
+    transition: 0.2s;
+}
+
+.project-card:hover {
+
+    border-color: var(--accent-color);
+
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+
+    margin-bottom: 15px;
+
+    font-size: 22px;
+}
+
+.project-card p {
+
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+}
+
+
+/* Project links */
+
+.project-links a {
+
+    display: inline-block;
+
+    margin-right: 15px;
+
+    color: var(--accent-color);
+}
+
+.project-links a:hover {
+
+    text-decoration: underline;
+}
+
+.demo-modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.85);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.demo-modal-content img {
+    max-width: 50vw;  
+    max-height: 50vh;  
+    margin: 10px auto;
+    display: block;
+    border-radius: 8px;
+    object-fit: contain;
+}
+.demo-close {
+    position: absolute;
+    top: 20px; right: 30px;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.demo-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 2.5rem;
+    cursor: pointer;
+    user-select: none;
+    padding: 10px;
+}
+
+.demo-prev {
+    left: 20px;
+}
+
+.demo-next {
+    right: 20px;
+}
+
+.demo-counter {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 1rem;
+}
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 850px) {
+
+    .hero-section {
+
+        gap: 50px;
+
+        padding: 80px 50px;
+    }
+
+    .hero-section .text h2 {
+
+        font-size: 35px;
+    }
+
+    .about-me,
+    .experience-skills,
+    .projects {
+
+        padding: 80px 50px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 740px) {
+
+    /* Navbar */
+
+    .navbar {
+
+        padding: 20px;
+
+    }
+
+    .tabs {
+
+        display: none;
+    }
+
+    /* Hero */
+
+    .hero-section {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 80px 20px;
+
+    }
+
+    .hero-section .headshot img {
+
+        width: 250px;
+        height: 250px;
+
+    }
+
+    .hero-section .text h2 {
+
+        font-size: 30px;
+    }
+
+
+    /* About */
+
+    .about-me {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 80px 20px;
+    }
+
+
+    /* Experience + Skills */
+
+    .experience-skills {
+
+        flex-direction: column;
+
+        padding: 80px 20px;
+    }
+
+
+    /* Projects */
+
+    .projects {
+
+        padding: 80px 20px;
+    }
+
+    .project-container {
+
+        flex-direction: column;
+    }
+
+}
+
+
+/* =========================
+   SMALL PHONES
+   ========================= */
+
+@media (max-width: 600px) {
+
+    .navbar .right a span {
+
+        display: none;
+    }
+
+    .navbar .right a {
+
+        margin-left: 12px;
+
+        font-size: 20px;
+    }
+
+    .navbar .left a {
+
+        font-size: 18px;
+    }
+
+}
+```

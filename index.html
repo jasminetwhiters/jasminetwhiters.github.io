@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+
+        <div class="left">
+            <a href="#home">Jasmine Whiters</a>
+        </div>
+
+        <div class="tabs">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+        </div>
+
+        <div class="right">
+
+    <a href="https://github.com/jasminetwhiters?tab=repositories" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-github"></i>
+        <span>GitHub</span>
+    </a>
+
+    <a href="https://www.linkedin.com/in/jasminewhiters" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-linkedin"></i>
+        <span>LinkedIn</span>
+    </a>
+
+    <a href="mailto:JasmineTWhiters@gmail.com">
+        <i class="fa-regular fa-envelope"></i>
+        <span>Email</span>
+    </a>
+
+</div>
+
+    </nav>
+
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+
+            <div class="headshot">
+                <img src="images/Profile picture.JPG" alt="Profile picture">
+            </div>
+
+            <div class="text">
+
+                <h2>Hi, Jasmine here</h2>
+
+                <p>
+                    I'm a Software Engineering student at the
+                    University of Northern Colorado.
+                </p>
+
+                <div class="links">
+
+                    <a href="#contact">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- About Me Section -->
+        <section class="about-me" id="about">
+
+            <div class="about-text">
+
+                <h2>About Me</h2>
+
+                <p>
+                    I'm a Software Engineering student passionate about
+                    building practical applications and solving real-world
+                    problems through technology. I enjoy learning new
+                    technologies, developing software, and turning ideas
+                    into functional solutions.
+                </p>
+
+            </div>
+
+            
+
+        </section>
+
+
+        <!-- Experience and Skills -->
+        <section class="experience-skills" id="experience">
+
+            <!-- Experience -->
+            <div class="experience">
+
+                <h2>Experience</h2>
+
+                <div class="experience-item">
+
+                    <h3>Intern</h3>
+
+                    <p class="company">
+                        Orion Labs
+                    </p>
+
+                    <p>
+                        Worked on software and machine learning projects
+                        involving computer vision, datasets, and model
+                        evaluation.
+                    </p>
+
+                    <p class="portfolio">
+                        <a href="https://docs.google.com/presentation/d/e/2PACX-1vQ7KYEZq27jIa02Z0cKDjqsAtkuMUJ1JpGoS35MEBuFYW517FwFtuJscQ_HcBGjEUyNXNMidj2J1rRY/pub?start=false&loop=false&delayms=3000" target="_blank" rel="noopener">Portfolio</a>
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Skills -->
+            <div class="skills">
+
+                <h2>Skills</h2>
+
+                <div class="cells">
+
+                    <div class="cell">
+                        <i class="fa-brands fa-html5"></i>
+                        <span>HTML</span>
+                    </div>
+
+                    <div class="cell">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <span>CSS</span>
+                    </div>
+
+                    <div class="cell">
+                        <i class="fa-brands fa-js"></i>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <div class="cell">
+                        <i class="fa-brands fa-node-js"></i>
+                        <span>Node.js</span>
+                    </div>
+
+                    <div class="cell">
+                        <i class="fa-brands fa-react"></i>
+                        <span>React</span>
+                    </div>
+
+                    <div class="cell">
+                        <i class="fa-brands fa-python"></i>
+                        <span>Python</span>
+                    </div>
+
+                    <div class="cell">
+                        <i class="fa-solid fa-code"></i>
+                        <span>C#</span>
+                    </div>
+
+                    <div class="cell">
+                        <i class="fa-brands fa-java"></i>
+                        <span>Java</span>
+                    </div>
+                    
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+
+            <h2>Software Projects</h2>
+
+            <div class="project-container">
+
+                <div class="project-card">
+
+                    <h3>HireReady</h3>
+
+                    <p>
+                        Built on the idea of "don't check if I'm HireReady, make me HireReady" 
+                        - This Flask + Claude API app extracts and compares skills between resumes and job postings,
+                         delivers a data-driven match score, and points you toward the exact courses and resources to close the gap.
+                    </p>
+
+                    <div class="project-links">
+                        <a href="https://github.com/jasminetwhiters/HireReady" target="_blank" rel="noopener">GitHub</a>
+                        <a href="#" onclick="openGallery(['images/HireReadyTemplate.png','images/HireReadyResult.png','images/HireReadyResult(1).png','images/Resources.png','images/Resources(1).png']); return false;">Gallery</a>
+                    </div>
+
+                </div>
+
+
+                <div class="project-card">
+
+                    <h3>Graffiti Detection</h3>
+
+                    <p>
+                    A computer vision pipeline built for Orion Labs'
+                    <a href="https://orionailabs.com/saiph/" target="_blank" rel="noopener">Saiph</a>
+                    sensor, training and evaluating object detection models to
+                    identify graffiti from labeled image datasets for a City of
+                    Long Beach pilot.
+                    </p>
+
+                <div class="project-links">
+                <a href="https://docs.google.com/presentation/d/e/2PACX-1vQ7KYEZq27jIa02Z0cKDjqsAtkuMUJ1JpGoS35MEBuFYW517FwFtuJscQ_HcBGjEUyNXNMidj2J1rRY/pub?start=false&loop=false&delayms=3000" target="_blank" rel="noopener">Portfolio</a>
+                </div>
+
+                </div>
+
+                <div class="project-card">
+
+    <h3>FlowGuard</h3>
+
+    <p>
+        FlowGuard is a smart-city infrastructure inspection platform
+        built as part of the
+        <a href="https://technology.nasa.gov/" target="_blank" rel="noopener">NASA Technology Transfer Program</a>,
+        integrating a robotic orb, snake camera, and gas sensors into
+        a real-time dashboard. Led as Student CEO and Scrum Master
+        across a 5-person cross-functional team.
+    </p>
+
+    <div class="project-links">
+        <a href="#" onclick="openGallery(['images/FlowGuard/Slide1.jpg', 'images/FlowGuard/Slide2.jpg', 'images/FlowGuard/Slide3.jpg', 'images/FlowGuard/Slide4.jpg', 'images/FlowGuard/Slide5.jpg', 'images/FlowGuard/Slide6.jpg', 'images/FlowGuard/Slide8.jpg', 'images/FlowGuard/Slide10.jpg', 'images/FlowGuard/Slide12.jpg', 'images/FlowGuard/Slide14.jpg', 'images/FlowGuard/Slide15.jpg', 'images/FlowGuard/Slide16.jpg', 'images/FlowGuard/Slide17.jpg']); return false;">Gallery</a>
+                </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <div id="gallery-modal" class="demo-modal">
+        <span class="demo-close" onclick="closeGallery()">&times;</span>
+        <span class="demo-nav demo-prev" onclick="prevImage()">&#10094;</span>
+        <div id="gallery-images" class="demo-modal-content"></div>
+        <span class="demo-nav demo-next" onclick="nextImage()">&#10095;</span>
+        <div id="gallery-counter" class="demo-counter"></div>
+    </div>
+
+    <script src="javascript.js"></script>
+</body>
+</html>
